@@ -2,11 +2,10 @@
 
 ## Description:
 
-This is a Python script that goes through a file line-by-line and verifies the encoding on each line. Be default, the script uses chardet (`http://chardet.readthedocs.io/en/latest/usage.html`) to detect the encoding on each line. It displays any line, that does not match with the optionally specified source encoding (default utf-8). If the confidence level from chardet detection is lower than 80%, it manually loops through all the standard encodings (`https://docs.python.org/3/library/codecs.html#standard-encodings`) and verifies by decoding with the corresponding encoding.
+This is a Python script that verifies the encoding of a file. It uses chardet (`http://chardet.readthedocs.io/en/latest/usage.html`) to detect the encoding.
 
 Finally, it generates an output file from the source with utf-8 encoding. 
 
-```
 
 ## How to Run the program:
 
